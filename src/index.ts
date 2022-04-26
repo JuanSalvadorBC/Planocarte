@@ -4,3 +4,5 @@ let graphics : CanvasRenderingContext2D;
 
 canvas = <HTMLCanvasElement>document.getElementById('circlechart');
 graphics = canvas.getContext('2d');
+ const miCanvas = new CanvasLocal(graphics, canvas);
+ miCanvas.paint();

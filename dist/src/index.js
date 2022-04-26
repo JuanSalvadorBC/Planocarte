@@ -1,5 +1,7 @@
+import { CanvasLocal } from './CanvasLocal.js';
 let canvas;
 let graphics;
 canvas = document.getElementById('circlechart');
 graphics = canvas.getContext('2d');
-export {};
+const miCanvas = new CanvasLocal(graphics, canvas);
+miCanvas.paint();
